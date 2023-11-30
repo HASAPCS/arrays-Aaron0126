@@ -1,26 +1,29 @@
 package com.example;
 
-import java.lang.reflect.Array;
+//import java.lang.reflect.Array;
 
 public class ArrayOperations {
 
     public static void main(String[] args) {
         // Exercise 1: Initialize and Print an Array
         // TODO: Initialize an array of integers and print its contents.
-        int []number={1, 2, 3, 4, 5};
-        System.out.println(number);
+        int []numbers={1, 2, 3, 4, 5};
+        for (int i: numbers){
+            System.out.println(i);
+        }
+        System.out.println(numbers);
     }
 
     // Exercise 2: Find the Maximum Value in an Array
     public static int findMaximumValue(int[] array) {
         // TODO: Implement the logic to find the maximum value in the array.
-        int Maximumnumber = array[0];
+        int maximumNumber = array[0];
         for (int num: array) {
-            if (Maximumnumber<num) {
-                Maximumnumber=num;
+            if (maximumNumber<num) {
+                maximumNumber=num;
             }
         }
-        return Maximumnumber; // Placeholder return value
+        return maximumNumber; // Placeholder return value
     }
 
     // Exercise 3: Check for a Specific Value
@@ -53,7 +56,7 @@ public class ArrayOperations {
             array[j] = temp;
         }
         // TODO: Implement the logic to reverse the array.
-        return new int[0]; // Placeholder return value
+        return array; // Placeholder return value
     }
 
     // Exercise 6: Sort an Array
